@@ -2,14 +2,14 @@ import commonjs from '@rollup/plugin-commonjs';
 import terser from '@rollup/plugin-terser';
 
 export default [{
-    input: './index.js',
+    input: './index.ts',
     output: {
       file: 'dist/eventemitter3.esm.js',
       format: 'es'
     },
     plugins: [commonjs()]
   }, {
-    input: './index.js',
+    input: './index.ts',
     output: {
       compact: true,
       file: 'dist/eventemitter3.esm.min.js',
@@ -18,7 +18,7 @@ export default [{
     },
     plugins: [commonjs(), terser()]
   }, {
-    input: './index.js',
+    input: './index.ts',
     output: {
       file: 'dist/eventemitter3.umd.js',
       format: 'umd',
@@ -26,7 +26,7 @@ export default [{
     },
     plugins: [commonjs()]
   }, {
-    input: './index.js',
+    input: './index.ts',
     output: {
       compact: true,
       file: 'dist/eventemitter3.umd.min.js',
